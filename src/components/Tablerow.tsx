@@ -1,4 +1,3 @@
-import React from "react";
 import Txn from "../SVGS/Txn";
 import Cart from "../SVGS/Cart";
 

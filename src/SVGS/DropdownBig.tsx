@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DropdownBig = () => {
   return (
     <svg
@@ -15,6 +13,6 @@ const DropdownBig = () => {
       />
     </svg>
   );
-}
+};
 
-export default DropdownBig
+export default DropdownBig;
