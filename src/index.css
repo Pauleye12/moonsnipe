@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.scrollBehaviour {
+  scroll-behavior: smooth;
+}
+
+/* Apply styles to the entire scrollbar */
+::-webkit-scrollbar {
+  width: 7px; /* Width of the scrollbar */
+  height: 5px; /* Height of the scrollbar for horizontal scroll */
+  cursor: pointer;
+}
+
+/* Background of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* The default background color */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #ebaf61; /* Color of the thumb */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ef9622b4; /* Darker color on hover */
+  cursor: pointer;
+}
+
+/* .bg-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 119, 111),
+    rgba(255, 255, 255, 0.15)
+  );
+}
+.bg-gradient-2 {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 119, 111),
+    rgba(255, 255, 255, 0.15)
+  );
+}
+.bg-gradient-3 {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 119, 111),
+    rgba(255, 255, 255, 0.15)
+  );
+} */
+.hero-bg {
+  background-image: url("/Images/heroBg2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.text-bg {
+  background-image: url("/Images/textBg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tt-bg {
+  background-image: url("/Images/ttBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tc-bg {
+  background-image: url("/Images/tcBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.firstFeatureBg {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 119, 111),
+    rgba(255, 255, 255, 0.15)
+  );
+}
+.secondFeatureBg {
+  background: linear-gradient(rgb(214, 120, 219), rgba(255, 255, 255, 0.15));
+}
+.thirdFeatureBg {
+  background: linear-gradient(rgb(255, 200, 118), rgba(255, 255, 255, 0.15));
+}
+.fourthFeatureBg {
+  background: linear-gradient(rgb(111, 149, 255), rgba(255, 255, 255, 0.15));
+}
+.fifthFeatureBg {
+  background: linear-gradient(rgb(255, 154, 154), rgba(255, 255, 255, 0.15));
+}
+.circleBg {
+  background-image: url("/Images/circlesBg.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
