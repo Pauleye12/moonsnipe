@@ -1,12 +1,6 @@
-import { useDisconnect } from "@fuels/react";
-const Sidebar = ({
-  openSideBar,
-  isConnected,
-}: {
-  openSideBar: boolean;
-  isConnected: boolean;
-}) => {
-  const { disconnect } = useDisconnect();
+// import { useDisconnect } from "@fuels/react";
+const Sidebar = ({ openSideBar }: { openSideBar: boolean }) => {
+  // const { disconnect } = useDisconnect();
   return (
     <div
       className={`w-full bg-[#101010c2] fixed h-full top-[80px] left-0 lg:hidden transition-all duration-500 ${
@@ -39,14 +33,14 @@ const Sidebar = ({
           >
             <p>Docs</p>
           </a>
-          {isConnected && (
+          {/* {isConnected && (
             <button
               onClick={() => disconnect()}
               className="rounded-full border lg:flex hidden border-[#ABABAB] px-3 py-2 border-solid text-white "
             >
               Disconnect
             </button>
-          )}
+          )} */}
         </div>
       </nav>
     </div>

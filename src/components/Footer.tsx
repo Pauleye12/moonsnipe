@@ -7,7 +7,7 @@ const Footer = () => {
     <section className="w-full text-white flex justify-center items-center pt-10 bg-[#101010]  flex-col ">
       <div className="w-full border-t lg:border-b border-solid border-[#ebc38e9d] flex items-center pb-1 lg:pb-8 py-8 justify-center gap-14 ">
         <div className="max-w-[1200px] w-full flex flex-col lg:flex-row justify-between items-center text-[#ABABAB] ">
-          <img className=" " src="/Images/logo.png" alt="" />
+          <img className=" w-[160px] " src="/Images/snipelogo.png" alt="" />
           <div className="w-full mt-10 px-4 lg:hidden flex justify-between items-center">
             <a
               className="border-b border-solid border-[#EBC28E] pb-1 "

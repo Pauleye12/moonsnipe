@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import Rightarrow from "../SVGS/Rightarrow";
-import { useConnectUI, useIsConnected, useDisconnect } from "@fuels/react";
+// import { useConnectUI, useIsConnected, useDisconnect } from "@fuels/react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import hamburger from "../hamburger.json";
 import { useRef } from "react";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
-  const { connect, isConnecting } = useConnectUI();
-  const { isConnected } = useIsConnected();
-  const { disconnect } = useDisconnect();
+  // const { connect, isConnecting } = useConnectUI();
+  // const { isConnected } = useIsConnected();
+  // const { disconnect } = useDisconnect();
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);
   const hamburgerRef = useRef<LottieRefCurrentProps>(null);
@@ -60,7 +60,7 @@ const Navbar = () => {
             animationData={hamburger}
           />
         </div>
-        <img src="/Images/logo.png" alt="" />
+        <img className="w-[160px]" src="/Images/snipelogo.png" alt="" />
         <div className=" lg:flex hidden max-w-[500px] w-full items-center justify-between gap-3 rounded-full border-[0.5px] border-solid border-[#ABABAB] px-4 py-3 bg-black text-white text-sm ">
           <a href="#home">
             <p>Home</p>
@@ -77,10 +77,15 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-2 justify-center ">
           <button
-            onClick={connect}
-            className="rounded-full border border-[#ABABAB] px-3 py-2 border-solid text-white "
+            // onClick={connect}
+            className="rounded-full flex items-center justify-center gap-2 border border-[#ABABAB] px-3 py-2 border-solid text-white "
           >
-            {isConnected ? (
+            <p>Get Started</p>
+            <div className="rounded-full bg-[#EBC28E] p-2 grid place-items-center">
+              <Rightarrow />
+            </div>
+
+            {/* {isConnected ? (
               <div className="flex items-center justify-center gap-2">
                 <p>Connected</p>
               </div>
@@ -96,19 +101,19 @@ const Navbar = () => {
                   {isConnecting ? "Connecting" : "connect"}
                 </p>
               </div>
-            )}
+            )} */}
           </button>
-          {isConnected && (
+          {/* {isConnected && (
             <button
               onClick={() => disconnect()}
               className="rounded-full border lg:flex hidden border-[#ABABAB] px-3 py-2 border-solid text-white "
             >
               Disconnect
             </button>
-          )}
+          )} */}
         </div>
       </div>
-      <Sidebar openSideBar={openSidebar} isConnected={isConnected} />
+      <Sidebar openSideBar={openSidebar} />
     </nav>
   );
 };
