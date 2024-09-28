@@ -62,8 +62,7 @@
 } */
 .hero-bg {
   background-image: url("/Images/heroBg2.png");
-  background-size: contain;
-  background-position: center;
+
   background-repeat: no-repeat;
 }
 .text-bg {

@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import Rightarrow from "../SVGS/Rightarrow";
 import { useConnectUI, useIsConnected, useDisconnect } from "@fuels/react";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import hamburger from "../hamburger.json";
+import { useRef } from "react";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const { connect, isConnecting } = useConnectUI();
   const { isConnected } = useIsConnected();
   const { disconnect } = useDisconnect();
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+  const hamburgerRef = useRef<LottieRefCurrentProps>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +31,18 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleClick = () => {
+    setOpenSidebar(!openSidebar);
+
+    if (!openSidebar) {
+      // Play the animation when opening
+      hamburgerRef.current?.playSegments([1, 10], true); // Change segment as needed
+    } else {
+      // Play the reverse animation when closing
+      hamburgerRef.current?.playSegments([10, 20], true); // Change segment as needed
+    }
+  };
   return (
     <nav
       className={`${
@@ -34,8 +52,16 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-[1200px] w-full px-4 py-6 flex justify-between gap-4 items-center ">
+        <div onClick={handleClick} className="lg:hidden cursor-pointer ">
+          <Lottie
+            lottieRef={hamburgerRef}
+            loop={false}
+            autoplay={false}
+            animationData={hamburger}
+          />
+        </div>
         <img src="/Images/logo.png" alt="" />
-        <div className="flex max-w-[500px] w-full items-center justify-between gap-3 rounded-full border-[0.5px] border-solid border-[#ABABAB] px-4 py-3 bg-black text-white text-sm ">
+        <div className=" lg:flex hidden max-w-[500px] w-full items-center justify-between gap-3 rounded-full border-[0.5px] border-solid border-[#ABABAB] px-4 py-3 bg-black text-white text-sm ">
           <a href="#home">
             <p>Home</p>
           </a>
@@ -63,20 +89,26 @@ const Navbar = () => {
                 <div className="rounded-full bg-[#EBC28E] p-2 grid place-items-center">
                   <Rightarrow />
                 </div>
-                <p>{isConnecting ? "Connecting" : "connect wallet"}</p>
+                <p className="hidden lg:flex ">
+                  {isConnecting ? "Connecting" : "connect wallet"}
+                </p>
+                <p className="flex lg:hidden ">
+                  {isConnecting ? "Connecting" : "connect"}
+                </p>
               </div>
             )}
           </button>
           {isConnected && (
             <button
               onClick={() => disconnect()}
-              className="rounded-full border border-[#ABABAB] px-3 py-2 border-solid text-white "
+              className="rounded-full border lg:flex hidden border-[#ABABAB] px-3 py-2 border-solid text-white "
             >
               Disconnect
             </button>
           )}
         </div>
       </div>
+      <Sidebar openSideBar={openSidebar} isConnected={isConnected} />
     </nav>
   );
 };

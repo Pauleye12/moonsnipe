@@ -48,13 +48,13 @@ const BotFeatures = () => {
       id="botfeatures"
       className="w-full text-white flex justify-center items-center pt-10 bg-[#101010] pb-14 "
     >
-      <div className="max-w-[1200px] w-full flex flex-col items-center justify-center gap-10 ">
+      <div className=" w-full flex flex-col items-center justify-center gap-10 ">
         <div className="w-full text-center flex flex-col items-center justify-center gap-8">
           <p className="text-[#ebc38eb4] ">[ NEXT GENERATION TRADING ]</p>
           <h1 className="text-5xl font-semibold ">Bot Features</h1>
         </div>
         <div className="w-full mt-4 flex items-center justify-center">
-          <div className=" overflow-x-scroll flex items-center gap-10 py-6 pb-9 ">
+          <div className=" overflow-x-scroll w-full flex items-center gap-2 py-6 pb-9 ">
             {Features.map((e, index) => (
               <FeatureBox key={index} {...e} />
             ))}
