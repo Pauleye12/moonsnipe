@@ -6,7 +6,7 @@ const HeroSection = () => {
     >
       <div className="max-w-[1200px] w-full flex flex-col items-center pt-11 px-3 py-4 pb-8 justify-between ">
         <div className=" max-w-[800px] w-full text-5xl font-medium flex flex-col gap-5 items-center text-center text-bg ">
-          <h1 className="max-w-[650px]  w-full">MOONLAUNCH</h1>
+          <h1 className="max-w-[650px]  w-full">MOONSNIPE</h1>
           <h3 className="max-w-[700px] font-medium text-4xl ">
             #1 Telegram Trading Bot on Fuel
           </h3>
