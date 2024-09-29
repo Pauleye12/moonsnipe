@@ -76,7 +76,8 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex items-center gap-2 justify-center ">
-          <button
+          <a
+            href="https://t.me/snipe_moon_bot"
             // onClick={connect}
             className="rounded-full flex items-center justify-center gap-2 border border-[#ABABAB] px-3 py-2 border-solid text-white "
           >
@@ -102,7 +103,7 @@ const Navbar = () => {
                 </p>
               </div>
             )} */}
-          </button>
+          </a>
           {/* {isConnected && (
             <button
               onClick={() => disconnect()}

@@ -14,7 +14,10 @@ const HeroSection = () => {
             Trade your tokens in milliseconds
           </h4>
 
-          <button className="bg-[#655745] flex items-center justify-center gap-3 rounded-full mt-8 px-4 font-semibold text-2xl py-1 ">
+          <a
+            href="https://t.me/snipe_moon_bot"
+            className="bg-[#655745] flex items-center justify-center gap-3 rounded-full mt-8 px-4 font-semibold text-2xl py-1 "
+          >
             Get Started
             <video
               className="w-20"
@@ -23,7 +26,7 @@ const HeroSection = () => {
               loop
               muted
             ></video>
-          </button>
+          </a>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-5 w-full mt-10 lg:mt-0  ">
           <div className="grid place-items-center max-w-[300px] lg:max-w-[250px] w-full h-[100px] bg-[#141414] px-3 py-2 border border-solid border-[#ABABAB33] rounded-lg tt-bg ">
@@ -35,7 +38,7 @@ const HeroSection = () => {
               <p className="text-xs text-[#ABABAB]">Total Transactions</p>
             </div>
           </div>
-          <div className="flex items-center justify-start max-w-[300px] lg:max-w-[250px] w-full h-[100px] bg-[#141414] px-3 py-2 border border-solid border-[#ABABAB33] rounded-lg tc-bg ">
+          {/* <div className="flex items-center justify-start max-w-[300px] lg:max-w-[250px] w-full h-[100px] bg-[#141414] px-3 py-2 border border-solid border-[#ABABAB33] rounded-lg tc-bg ">
             <div
               className="flex flex-col
             "
@@ -43,8 +46,8 @@ const HeroSection = () => {
               <h1 className="font-medium text-3xl  ">200,100</h1>
               <p className="text-xs text-[#ABABAB]">Tokens Created</p>
             </div>
-          </div>
-          <div className="grid place-items-center max-w-[300px] lg:max-w-[250px] w-full h-[100px] bg-[#141414] px-3 py-2 border border-solid border-[#ABABAB33] rounded-lg ">
+          </div> */}
+          {/* <div className="grid place-items-center max-w-[300px] lg:max-w-[250px] w-full h-[100px] bg-[#141414] px-3 py-2 border border-solid border-[#ABABAB33] rounded-lg ">
             <div
               className="flex flex-col items-center
             "
@@ -54,7 +57,7 @@ const HeroSection = () => {
                 Total marketcap generated
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -2,45 +2,45 @@ import FeatureBox from "./FeatureBox";
 
 const Features = [
   {
-    feature: "Token Swap",
+    feature: "Asset Swap",
     details:
-      "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
+      "Instantly buy and sell assets on the Fuel blockchain, leveraging MiraAMM's intelligent routing to ensure the best price and lowest slippage on every trade.",
     exploreMore: "",
     borderColor: "firstFeatureBg",
     image: "📈",
   },
   {
-    feature: "Token Swap",
+    feature: "Position Management",
     details:
-      "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
+      "Easily track and manage your asset holdings, with a clear, intuitive interface for swift portfolio adjustments.",
     exploreMore: "",
     borderColor: "secondFeatureBg",
     image: "🤖",
   },
   {
-    feature: "Token Swap",
+    feature: "Wallet Tracking",
     details:
-      "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
+      "Seamlessly monitor any wallet on the Fuel blockchain in real time, enabling transparent insight into transactions and balances.",
     exploreMore: "",
     borderColor: "thirdFeatureBg",
     image: "🎯",
   },
-  {
-    feature: "Token Swap",
-    details:
-      "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
-    exploreMore: "",
-    borderColor: "fourthFeatureBg",
-    image: "📊",
-  },
-  {
-    feature: "Token Swap",
-    details:
-      "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
-    exploreMore: "",
-    borderColor: "fifthFeatureBg",
-    image: "🔁",
-  },
+  // {
+  //   feature: "Token Swap",
+  //   details:
+  //     "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
+  //   exploreMore: "",
+  //   borderColor: "fourthFeatureBg",
+  //   image: "📊",
+  // },
+  // {
+  //   feature: "Token Swap",
+  //   details:
+  //     "Instantly buy & sell tokens across Solana including Token22. Utilizing Jup.Ag for optimal swap routes ensuring you always get the best price.",
+  //   exploreMore: "",
+  //   borderColor: "fifthFeatureBg",
+  //   image: "🔁",
+  // },
 ];
 const BotFeatures = () => {
   return (
