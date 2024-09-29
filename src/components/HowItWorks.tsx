@@ -4,14 +4,17 @@ const HowItWorks = () => {
       id="howitworks"
       className="w-full text-white flex justify-center items-center pt-10 bg-[#101010] pb-14 "
     >
-      <div className="max-w-[1200px] w-full flex flex-col-reverse lg:flex-row items-start justify-center gap-14 ">
-        <div className=" w-full  p-4  ">
+      <div className="max-w-[1200px] w-full flex flex-col-reverse lg:flex-row-reverse items-start justify-center gap-14 ">
+        <div className=" p-4  ">
           <video
-            className="w-full border border-solid border-white "
-            src=""
+            className="w-[300px] h-[600px]  "
+            src="/Images/tutsVideo.mp4"
+            autoPlay
+            loop
+            muted
           ></video>
         </div>
-        <div className=" lg:w-[70%] w-full p-4 flex flex-col items-start gap-8  ">
+        <div className=" lg:w-[50%] w-full p-4 flex flex-col items-start gap-8  ">
           <p className="text-[#ebc38eb4] w-full  text-center lg:text-left">
             [ HOW IT WORKS ]
           </p>
