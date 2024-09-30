@@ -5,7 +5,7 @@ const HowItWorks = () => {
       className="w-full text-white flex justify-center items-center pt-10 bg-[#101010] pb-14 "
     >
       <div className="max-w-[1200px] w-full flex flex-col-reverse lg:flex-row-reverse items-start justify-center gap-14 ">
-        <div className=" p-4  ">
+        <div className=" p-4 w-full flex justify-center items-center lg:w-auto  ">
           <video
             className="w-[300px] h-[600px]  "
             src="/Images/tutsVideo.mp4"
@@ -23,11 +23,12 @@ const HowItWorks = () => {
           </h1>
           <div className="flex flex-col gap-4 items-start text-[#ABABAB] lg:w-[80%] w-full ">
             <p>
-              Swap with the bot to gain FLUX points, $1 swapped = 1 Flux point.
+              To get started with trading, send some ETH to your moonsnipe
+              wallet address
             </p>
             <p>
-              When users join via your referral link, you get 10% of their
-              points generated.
+              To buy an asset, just enter the assetId or symbol. To view list of
+              supported assets, enter the /assets command.
             </p>
           </div>
         </div>

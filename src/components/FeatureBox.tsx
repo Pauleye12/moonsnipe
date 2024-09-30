@@ -17,9 +17,12 @@ const FeatureBox = ({
     <div
       className={`bg-[#72573599] ${borderColor} rounded-[30px] p-[2px] mx-8 `}
     >
-      <div className="bg-[#15161A] h-[270px] px-6 w-[350px] lg:w-[400px] flex flex-col gap-2 py-5 rounded-[30px] ">
-        <h1 className="text-2xl font-semibold">{feature}</h1>
-        <p className="text-[#ABABAB]">{details}</p>
+      <div className="bg-[#15161A] h-[300px] px-6 w-[350px] lg:w-[400px] flex flex-col justify-between py-5 rounded-[30px] ">
+        <div className="flex flex-col gap-2 w-full">
+          <h1 className="text-2xl font-semibold">{feature}</h1>
+          <p className="text-[#ABABAB]">{details}</p>
+        </div>
+
         <div className=" w-full flex justify-between mt-16 items-center ">
           <span>{image}</span>
           <a

@@ -5,9 +5,12 @@ const PartOfFuture = () => {
         <h1 className="max-w-[700px] w-full text-5xl lg:text-6xl font-bold text-center text-[#ebc38e] ">
           Supercharge your Trade; Trade effortlessly, Fuel your profits,
         </h1>
-        <button className="bg-[#655745] text-white px-10 py-3 rounded-xl text-center font-semibold text-xl">
+        <a
+          href="https://t.me/snipe_moon_bot"
+          className="bg-[#655745] text-white px-10 py-3 rounded-xl text-center font-semibold text-xl"
+        >
           Lets go
-        </button>
+        </a>
       </div>
     </section>
   );
